@@ -1,4 +1,4 @@
-function calculator() {
+let calculatorModule = (function () {
     let data = 0;
 
     return {
@@ -12,11 +12,9 @@ function calculator() {
             data -= n;
         }
     }
-}
-
-let superCalculator = calculator();
-superCalculator.display();
-superCalculator.add(5);
-superCalculator.display();
-superCalculator.subtract(3);
-superCalculator.display();
+})();
+calculatorModule.display();
+calculatorModule.add(5);
+calculatorModule.display();
+calculatorModule.subtract(3);
+calculatorModule.display();
